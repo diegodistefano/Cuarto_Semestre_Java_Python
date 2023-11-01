@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Conexion {
-    public static Connection getConection(){
+    public static Connection getConnection(){
         Connection conexion = null;
         //Variables para conectarnos a la DDBB
         var baseDatos = "estudiantes2022";
