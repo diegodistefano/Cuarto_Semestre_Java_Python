@@ -18,7 +18,7 @@ public class EstudianteDAO {
         ResultSet rs; //Obtenemos el resultao de la base de datos
         //Creamos un objeto de tipo conexión
         Connection con = getConnection();
-        String sql = "SELECT * FROM estudiantes ORDER BY idestudiantes2022";
+        String sql = "SELECT * FROM estudiantes2022 ORDER BY idestudiantes2022";
         try {
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
