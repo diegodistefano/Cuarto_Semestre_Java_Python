@@ -1,0 +1,30 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLPackage</id><coordinates><x>80</x><y>70</y><w>730</w><h>540</h></coordinates><panel_attributes>laboratorio_usuarios
+--
+
+bg=black
+fg=pink</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>100</x><y>100</y><w>210</w><h>250</h></coordinates><panel_attributes>Conexion
+--
+_-DATABASE: String_
+_-USERNAME: String_
+_-PASSWORD: String_
+_-DB_PORT: String_
+_-HOST: String_
+_MIN_CON: int_
+_MAX_CON: int_
+_-pool: Pool_
+--
+#Operation(i: int): int
+_/+obtenerPool(cls):Pool/_
+_/+obtenerConexion(cls): Connection/_
+_/+liberarConexion(cls, conexion)/_
+_/+cerrarConexiones(cls)/_
+--
+Responsibilities
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>100</y><w>210</w><h>150</h></coordinates><panel_attributes>Usuario
+--
+-id_usuario: int
+-username: String
+-password: String
+--
+/+__str__(): String/
+/+metodo Get/Set de cada atributo
