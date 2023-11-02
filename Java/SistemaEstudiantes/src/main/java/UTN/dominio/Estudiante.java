@@ -6,23 +6,19 @@ public class Estudiante {
     private String apellido;
     private String telefono;
     private String email;
+    public Estudiante() {} //Constructor vacío
 
-    public Estudiante(){} // constructor vacio
-
-    public Estudiante(int idEstudiante){ //constructor para la llave primaria
-        this.idEstudiante=idEstudiante;
+    public Estudiante(int idEstudiante) { //Constructor para la llave primaria
+        this.idEstudiante = idEstudiante;
     }
-
-    //Constructor para Crear un nuevo estudiante
-    public Estudiante(String nombre, String apellido, String telefono, String email){
+    public Estudiante(String nombre, String apellido, String telefono, String email) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.telefono = telefono;
         this.email = email;
     }
 
-    //Constructor para Modificar un nuevo estudiante
-    public Estudiante(int idEstudiante, String nombre, String apellido, String telefono, String email){
+    public Estudiante(int idEstudiante, String nombre, String apellido, String telefono, String email) {
         this.idEstudiante = idEstudiante;
         this.nombre = nombre;
         this.apellido = apellido;
