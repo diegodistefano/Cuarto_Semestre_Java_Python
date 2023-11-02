@@ -63,7 +63,17 @@ public class EstudianteDAO {
                 estudiante.setNombre(rs.getString("email"));
                 return true; //Se encontró un registro
             } //Fin del IF
+        } catch (Exception e){
+            System.out.println("Ocurrió un error al buscar estudiante: "+e.getMessage());
         }
+        finally {
+            try {
+                con.close();
+            } catch (Exception e) {
+                System.out.println("Ocurrió un error al cerrar la conexión: " + e.getMessage());
+            } //Fin catch
+        } //Fin finally
+        return false;
     }
 
     public static void main(String[] args) {
